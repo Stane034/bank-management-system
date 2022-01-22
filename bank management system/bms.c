@@ -61,7 +61,7 @@ void new_acc()
     }
     add.acc_no=check.acc_no;
         printf("\nEnter the name:");
-    scanf("%s",add.name);
+    scanf("%s",add.name); 
     printf("\nEnter the date of birth(mm/dd/yyyy):");
     scanf("%d/%d/%d",&add.dob.month,&add.dob.day,&add.dob.year);
     printf("\nEnter the age:");
@@ -530,7 +530,7 @@ int main()
     char pass[10],password[10]="codewithc";
     int i=0;
     printf("\n\n\t\tEnter the password to login:");
-    scanf("%s",pass);
+    scanf("%9s",pass); // Potrudi se da koristis svugde u C ne postoje stringovi tako da ti je ovo jedan array tako da ne bi doslo do buffer overflow-a bilo bi dobro da koristis ovo, mrzi me da ti ispravljam ceo kod ima 400+ linija :P.
     /*do
     {
     //if (pass[i]!=13&&pass[i]!=8)
